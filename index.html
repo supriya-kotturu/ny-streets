@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map-web-components</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script><!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
+  <script type="module" src="https://js.arcgis.com/5.0/"></script>
+  <!-- <script type="module">
+    const chartElement = await document.querySelector("arcgis-chart");
+    await chartElement.loadModel();
+
+    const guideIndex = 0;
+    chartElement.model.addYAxisGuide("Y-axis guide", guideIndex);
+    chartElement.model.setGuideStart(40000, guideIndex);
+    chartElement.model.setGuideStyle(
+      {
+        type: "esriSFS",
+        color: [100, 100, 100, 100],
+      },
+      guideIndex,
+    );
+    chartElement.model.setGuideLabelText("Median Individual Earnings", guideIndex);
+
+  </script> -->
+</html>

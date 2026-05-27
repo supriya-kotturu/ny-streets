@@ -1,0 +1,8 @@
+@import "@esri/calcite-components/main.css";
+
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+}
