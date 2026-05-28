@@ -2,7 +2,170 @@
 
 html,
 body,
-#app {
+#app,
+demo-app {
   margin: 0;
   height: 100%;
+}
+
+demo-app {
+  display: block;
+  min-height: 100%;
+  color: #17202a;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+  height: 100%;
+  background: #f7f3ec;
+}
+
+.story-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: clamp(1.25rem, 3vw, 3rem);
+  border-right: 1px solid rgb(23 32 42 / 12%);
+  background:
+    radial-gradient(circle at top left, rgb(0 121 193 / 12%), transparent 28rem), #fbf8f2;
+}
+
+.story-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.kicker {
+  color: #00619b;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 4.75rem);
+  letter-spacing: -0.07em;
+  line-height: 0.9;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.description {
+  color: #394957;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.insight {
+  border-left: 0.25rem solid #0079c1;
+  color: #22313f;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.source {
+  color: #5b6975;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.controls {
+  display: grid;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+button {
+  border: 1px solid rgb(23 32 42 / 18%);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #17202a;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+button:hover:not(:disabled),
+button[aria-current="true"] {
+  background: #0079c1;
+  border-color: #0079c1;
+  color: #ffffff;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dot {
+  height: 0.75rem;
+  overflow: hidden;
+  padding: 0;
+  width: 0.75rem;
+}
+
+.map-card {
+  min-height: 0;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.map-frame {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(23 32 42 / 12%);
+  border-radius: 1.5rem;
+  background: #d9e5ec;
+  box-shadow: 0 1.5rem 4rem rgb(23 32 42 / 18%);
+}
+
+arcgis-map {
+  display: block;
+  height: 100%;
+  min-height: 420px;
+  width: 100%;
+}
+
+@media (max-width: 860px) {
+  .story {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(420px, 1fr);
+  }
+
+  .story-panel {
+    border-bottom: 1px solid rgb(23 32 42 / 12%);
+    border-right: 0;
+  }
+
+  h1 {
+    max-width: 12ch;
+  }
 }
