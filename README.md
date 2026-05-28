@@ -17,7 +17,7 @@ NY Streets is structured as a guided map story. Each step pairs a short narrativ
 - Parking meter and curbside activity
 - A combined citywide operations view
 
-<img src="./public/images/readme-story-placeholder.png" alt="Story panel and map screenshot" width="800" height="601">
+<img src="./public/images/readme-story-placeholder.gif" alt="Story panel and map gif">
 
 ## Built with
 
