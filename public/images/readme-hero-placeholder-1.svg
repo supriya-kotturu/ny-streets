@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">NY Streets hero screenshot placeholder</title>
+  <desc id="desc">Placeholder for the deployed NY Streets app hero screenshot.</desc>
+  <rect width="1200" height="675" fill="#f7f3ec"/>
+  <rect x="64" y="64" width="360" height="547" rx="24" fill="#fbf8f2" stroke="#d8d0c4"/>
+  <rect x="472" y="64" width="664" height="547" rx="24" fill="#d9e5ec" stroke="#bccbd4"/>
+  <path d="M520 520 C640 430, 720 520, 832 430 S1016 408, 1088 300" fill="none" stroke="#0079c1" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="722" cy="362" r="72" fill="#0079c1" opacity="0.18"/>
+  <circle cx="930" cy="250" r="52" fill="#17202a" opacity="0.12"/>
+  <text x="112" y="165" fill="#00619b" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">SCREENSHOT</text>
+  <text x="112" y="245" fill="#17202a" font-family="Arial, sans-serif" font-size="56" font-weight="800">NY Streets</text>
+  <text x="112" y="315" fill="#394957" font-family="Arial, sans-serif" font-size="28">Replace with the live app hero view.</text>
+</svg>
