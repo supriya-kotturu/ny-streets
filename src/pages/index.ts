@@ -1,5 +1,5 @@
-import storyPagesJson from "../data/story-pages.json";
 import type { ArcgisMapSlotPosition, StoryPage } from "../types/story-page.ts";
+import { storyPages as rawStoryPages } from "../data/story-pages.ts";
 
 type RawStoryPage = Omit<StoryPage, "chart"> & {
   chart?: {
@@ -18,8 +18,6 @@ const arcgisMapSlotPositions = new Set<string>([
   "bottom-start",
   "bottom-end",
 ]);
-
-const rawStoryPages: RawStoryPage[] = storyPagesJson;
 
 function isArcgisMapSlotPosition(value: string): value is ArcgisMapSlotPosition {
   return arcgisMapSlotPositions.has(value);
