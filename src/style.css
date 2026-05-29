@@ -132,6 +132,7 @@ h1 {
   box-shadow: var(--calcite-shadow-sm);
 }
 
+
 arcgis-map {
   display: block;
   height: 100%;
